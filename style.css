@@ -67,7 +67,8 @@
 }
 
 #reset {
-  margin: 0 120px;
+  margin: 0px 120px;
+
   padding: 1px 18px;
   background: #f3e7f9;
   border-radius: 6px;
@@ -77,13 +78,14 @@
   font-weight: bolder;
 }
 
-#choosex:hover,
+#choose_1:hover,
 #choose0:hover,
 #reset:hover {
   background-color: rgb(173, 175, 206);
 }
 #choose_1 {
   margin: 0 23px;
+
   padding: 1px 32px;
   background: #f3e7f9;
   border-radius: 6px;
@@ -94,7 +96,7 @@
 }
 
 #choose0 {
-  margin: 0 120px;
+  margin: 5px 120px;
   padding: 1px 32px;
   background: #f3e7f9;
   border-radius: 6px;
@@ -105,9 +107,7 @@
 }
 .line {
   background-color: black;
-  height: 3px;
-  width: 0;
+  height: 23px;
+  width: 50;
   position: absolute;
-  background-color: #911d91;
-  transition: width 1s ease-in-out;
 }
