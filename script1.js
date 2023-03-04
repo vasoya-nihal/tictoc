@@ -42,8 +42,7 @@ const changeTurn = ()=>{
             if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
                 document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
                 isgameover = true
-                // document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
-                // document.querySelector(".line").style.width = "50vw";
+               
             }
         })
     }
@@ -81,9 +80,7 @@ Array.from(boxes).forEach(element =>{
 //     turn = "X"; 
    
 //     // isgamex = x
-//     // document.querySelector(".line").style.width = "0vw";
 //     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-//     // document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 // })
 
 // //  For 0 Button 
@@ -97,9 +94,7 @@ Array.from(boxes).forEach(element =>{
 //     turn = "X"; 
    
 //     // isgamex = x
-//     // document.querySelector(".line").style.width = "0vw";
 //     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-//     // document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 // })
 
 
@@ -111,7 +106,5 @@ reset.addEventListener('click', ()=>{
     });
     turn = "X"; 
     isgameover = false
-    // document.querySelector(".line").style.width = "0vw";
     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-    // document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
