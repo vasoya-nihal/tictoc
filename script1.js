@@ -4,10 +4,20 @@
 
 let turn = "0"
  let isgameover = false;
+//  let isgamex = x;
+
 // Turn change condition.....
- const changeTurn = ()=>{
-         return turn === "X"? "0": "X"
-     }
+const changeTurn = ()=>{
+    choose_1.addEventListener('click', ()=>{
+        turn= "X";
+        });
+        choose0.addEventListener('click', ()=>{
+            turn= "0";
+            });
+    // return turn === "X"? "0": "X"
+    return turn ;
+   
+}
 //
 
 // winning Conditions
@@ -37,13 +47,13 @@ let turn = "0"
             }
         })
     }
-    if(checkWin()==true){
+    // if(checkWin()==true){
     
-        print("done");
-    }
-    else{
-        print("oh no");
-    }
+    //     print("done");
+    // }
+    // else{
+    //     print("oh no");
+    // }
 
     let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
@@ -60,6 +70,39 @@ Array.from(boxes).forEach(element =>{
         }
     })
 })
+
+// // For X Bitton
+// choose_1.addEventListener('click', ()=>{
+//     // let boxtexts = document.querySelectorAll('.boxtext');
+//     let boxtexts = document.querySelectorAll('.boxtext');
+//     Array.from(boxtexts).forEach(element => {
+//         element.innerText = "x"
+//     });
+//     turn = "X"; 
+   
+//     // isgamex = x
+//     // document.querySelector(".line").style.width = "0vw";
+//     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
+//     // document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
+// })
+
+// //  For 0 Button 
+
+// choose0.addEventListener('click', ()=>{
+//     // let boxtexts = document.querySelectorAll('.boxtext');
+//     let boxtexts = document.querySelectorAll('.boxtext');
+//     Array.from(boxtexts).forEach(element => {
+//         element.innerText = "0"
+//     });
+//     turn = "X"; 
+   
+//     // isgamex = x
+//     // document.querySelector(".line").style.width = "0vw";
+//     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
+//     // document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
+// })
+
+
 
 reset.addEventListener('click', ()=>{
     let boxtexts = document.querySelectorAll('.boxtext');
