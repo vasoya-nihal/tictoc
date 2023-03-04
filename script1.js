@@ -42,6 +42,9 @@ const changeTurn = ()=>{
             if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
                 document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
                 isgameover = true
+
+                choose_1.disabled = true;
+                choose0.disabled = true;
                
             }
         })
@@ -104,7 +107,11 @@ reset.addEventListener('click', ()=>{
     Array.from(boxtexts).forEach(element => {
         element.innerText = ""
     });
-    turn = "X"; 
+    turn = " "; 
     isgameover = false
+    choose_1.disabled = false;
+                choose0.disabled = false;
     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
+
+
 })
